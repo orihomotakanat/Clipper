@@ -13,6 +13,11 @@
 		7185272F1EF6C07900875F46 /* Clipper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7185272D1EF6C07900875F46 /* Clipper.xcdatamodeld */; };
 		718527311EF6C07900875F46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 718527301EF6C07900875F46 /* Assets.xcassets */; };
 		718527341EF6C07900875F46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 718527321EF6C07900875F46 /* LaunchScreen.storyboard */; };
+		7185273E1EF6C38400875F46 /* NSString+Sha1.m in Sources */ = {isa = PBXBuildFile; fileRef = 7185273D1EF6C38400875F46 /* NSString+Sha1.m */; };
+		718527431EF6C39900875F46 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 718527401EF6C39900875F46 /* Reachability.m */; };
+		718527441EF6C39900875F46 /* RNCachingURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 718527421EF6C39900875F46 /* RNCachingURLProtocol.m */; };
+		718527461EF6C61700875F46 /* clippedListControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718527451EF6C61700875F46 /* clippedListControllerTableViewController.swift */; };
+		718527491EF6F24100875F46 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 718527481EF6F24100875F46 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,15 @@
 		718527301EF6C07900875F46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		718527331EF6C07900875F46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		718527351EF6C07900875F46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7185273B1EF6C38300875F46 /* Clipper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Clipper-Bridging-Header.h"; sourceTree = "<group>"; };
+		7185273C1EF6C38400875F46 /* NSString+Sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Sha1.h"; sourceTree = "<group>"; };
+		7185273D1EF6C38400875F46 /* NSString+Sha1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Sha1.m"; sourceTree = "<group>"; };
+		7185273F1EF6C39900875F46 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		718527401EF6C39900875F46 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		718527411EF6C39900875F46 /* RNCachingURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCachingURLProtocol.h; sourceTree = "<group>"; };
+		718527421EF6C39900875F46 /* RNCachingURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCachingURLProtocol.m; sourceTree = "<group>"; };
+		718527451EF6C61700875F46 /* clippedListControllerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = clippedListControllerTableViewController.swift; sourceTree = "<group>"; };
+		718527481EF6F24100875F46 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				718527491EF6F24100875F46 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +57,7 @@
 			children = (
 				718527251EF6C07900875F46 /* Clipper */,
 				718527241EF6C07900875F46 /* Products */,
+				718527471EF6F24000875F46 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,8 +72,16 @@
 		718527251EF6C07900875F46 /* Clipper */ = {
 			isa = PBXGroup;
 			children = (
+				7185273B1EF6C38300875F46 /* Clipper-Bridging-Header.h */,
+				7185273C1EF6C38400875F46 /* NSString+Sha1.h */,
+				7185273D1EF6C38400875F46 /* NSString+Sha1.m */,
+				7185273F1EF6C39900875F46 /* Reachability.h */,
+				718527401EF6C39900875F46 /* Reachability.m */,
+				718527411EF6C39900875F46 /* RNCachingURLProtocol.h */,
+				718527421EF6C39900875F46 /* RNCachingURLProtocol.m */,
 				718527261EF6C07900875F46 /* AppDelegate.swift */,
 				718527281EF6C07900875F46 /* ViewController.swift */,
+				718527451EF6C61700875F46 /* clippedListControllerTableViewController.swift */,
 				7185272A1EF6C07900875F46 /* Main.storyboard */,
 				718527301EF6C07900875F46 /* Assets.xcassets */,
 				718527321EF6C07900875F46 /* LaunchScreen.storyboard */,
@@ -65,6 +89,14 @@
 				7185272D1EF6C07900875F46 /* Clipper.xcdatamodeld */,
 			);
 			path = Clipper;
+			sourceTree = "<group>";
+		};
+		718527471EF6F24000875F46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				718527481EF6F24100875F46 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,6 +132,7 @@
 					718527221EF6C07900875F46 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 82U6N43YRD;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -142,7 +175,11 @@
 			files = (
 				718527291EF6C07900875F46 /* ViewController.swift in Sources */,
 				718527271EF6C07900875F46 /* AppDelegate.swift in Sources */,
+				7185273E1EF6C38400875F46 /* NSString+Sha1.m in Sources */,
 				7185272F1EF6C07900875F46 /* Clipper.xcdatamodeld in Sources */,
+				718527431EF6C39900875F46 /* Reachability.m in Sources */,
+				718527461EF6C61700875F46 /* clippedListControllerTableViewController.swift in Sources */,
+				718527441EF6C39900875F46 /* RNCachingURLProtocol.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,11 +302,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 82U6N43YRD;
 				INFOPLIST_FILE = Clipper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NextBrain.com.Clipper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Clipper/Clipper-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -278,11 +318,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 82U6N43YRD;
 				INFOPLIST_FILE = Clipper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NextBrain.com.Clipper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Clipper/Clipper-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
